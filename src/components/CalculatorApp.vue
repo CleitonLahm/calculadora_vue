@@ -37,12 +37,12 @@ export default {
       number1: 0,
       number2: 0,
       selectedOperation: 'add',
-      result: 0 // Adicionei a propriedade result aqui
+      result: 0
     };
   },
   methods: {
     calculate(e) {
-      e.preventDefault(); // Correção aqui
+      e.preventDefault(); 
       
       let result = 0;
 
@@ -63,7 +63,6 @@ export default {
           break;
       }
 
-      // Atualize o valor do resultado
       this.result = result;
     }
   }
